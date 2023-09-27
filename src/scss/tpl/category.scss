@@ -246,11 +246,11 @@
     transform: scale(0.5);
   }
   50% {
-    left: calc(100% - 200px); /* Положение справа за пределами экрана */
+    left: calc(100% - 200px);
     transform: scale(1);
   }
   100% {
-    left: calc(100% - 100px); /* Положение справа за пределами экрана */
+    left: calc(100% - 100px);
     transform: scale(0.5);
   }
 }
@@ -266,12 +266,12 @@
 
 .ball:before {
   content: '';
-  width: 50px; /* Начальный размер шарика */
-  height: 50px; /* Начальный размер шарика */
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный белый цвет шарика */
+  background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
-  top: -50px; /* Начальное положение сверху за пределами элемента */
+  top: -50px;
   animation: flyDown 5s linear infinite alternate;
 }
 
@@ -331,16 +331,16 @@
 
 @keyframes floatUpDownLeftRight {
   0%, 100% {
-    transform: translate(0, 0); /* Начальное и конечное положение - нет смещения */
+    transform: translate(0, 0);
   }
   25% {
-    transform: translate(0, -20px); /* Смещение вверх на 20px на 25% анимации */
+    transform: translate(0, -20px);
   }
   50% {
-    transform: translate(20px, 20px); /* Смещение вверх и вправо на 20px на 50% анимации */
+    transform: translate(20px, 20px);
   }
   75% {
-    transform: translate(-20px, 0); /* Смещение вправо на 20px на 75% анимации */
+    transform: translate(-20px, 0);
   }
 }
 
