@@ -17,7 +17,10 @@ module.exports = {
     static: path.resolve(__dirname, './dist'),
     open: true,
     compress: true,
-    port: 8080
+    port: 8080,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
   },
   module: {
     rules: [{
@@ -51,7 +54,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      filename:'index.html',
       template: './src/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename:'auth.html',
+      template: './src/auth.html'
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),

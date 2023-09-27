@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SAMEDIA</title>
 </head>
-<body>
-  
+<body class="page">
+  <header class="header">
+    <div class="container header__wrapper">
+        <div class="header__col header__col_left">
+            <a class="header__link-main"href="/">
+             <img class="header__logo" src="<%=require('./images/icons/logo.svg')%>" alt="Лого">
+           </a>
+            <div class="header__location">
+                <p class="header__location-city">Ростов-на-Дону</p>
+                <p class="header__location-street">ул.Мурлычева 72/27</p>
+            </div>
+        </div>
+        <div class="header__col_right">
+            <div class="header__callback">
+                <a href="tel:+7(988)-898-83-24" class="header__callback-number">+7(988)-898-83-24</a>
+                <a href="auth.html" target="_blank" class="header__button" type="button">Пройти авторизацию</a>
+            </div>
+        </div>
+    </div>
+    <div class="header__nav">
+        <div class="container">
+            <ul class="nav-content ">
+                <li><a href="https://github.com/SokolovAlex172" target="_blank" class="nav-link">Git hub</a></li>
+                <li><a href="https://drive.google.com/file/d/1WyrktvWUC_W2V9zV33j1stMZ0v9JDgeU/view?usp=sharing" target="_blank" class="nav-link">Портфолио</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+  <main>
+    <div class="category">
+        <div class="category__decor">
+            <div class="category__decor-circle"></div>
+            <div class="category__decor-leaf"></div>
+            <div class="category__decor-dots"></div>
+        </div>
+        <div class="category__container container">
+            <h2 class="category__title">Категории</h2>
+            <div class="category__items">
+                <div class="category__item">
+                    <p class="category__item-text">Пестицыды</p>
+                    <div class="category__item-img category__item-img-pest"></div>
+                    <div class="ball"></div>
+                </div>
+                <div class="category__item">
+                    <p class="category__item-text">Культуры</p>
+                    <div class="category__item-img category__item-img-cult"></div>
+                    <div class="ball"></div>
+
+                </div>
+                <div class="category__item">
+                    <p class="category__item-text">Вредители</p>
+                    <div class="category__item-img category__item-img-wreckers"></div>
+                    <div class="ball"></div>
+                </div>
+                <div class="category__item">
+                    <p class="category__item-text">Действующие</br>вещества</p> 
+                    <div class="category__item-img category__item-img-ingred"></div>
+                    <div class="ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>
+  <footer class="footer">
+    
+  </footer>
 </body>
 </html>

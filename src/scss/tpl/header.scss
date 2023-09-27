@@ -1,0 +1,120 @@
+.header {
+    z-index: 10;
+}
+
+.header__wrapper {
+    display: flex;
+    height: 67px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    padding: 0 20px;
+
+    @media (max-width: 768px) {
+
+    height: 70px;
+    align-items: center;
+    }
+}
+
+
+
+.header__col_left {
+    display: flex;
+}
+
+.header__logo {
+    @media (min-width: 769px) {
+        min-width: 80px;
+        min-height: 29px;
+        padding-right: 42px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 132px;
+        max-height: 18px;
+    }
+}
+
+.header__location {
+    position: relative;
+    height: 38px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.header__location::before {
+    content: '';
+    background-image: url(../images/icons/location.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    left: -23px;
+    top: 3px;
+    height: 20px;
+    width: 20px;
+}
+
+.header__location {
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.header__location-city {
+    margin: 0 0 -3px;
+    width: 111px;
+}
+
+.header__location-street {
+    margin: 0;
+    color: #868686;
+}
+
+.header__callback-number {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    color: #364844;
+    text-decoration: none;
+    margin-right: 31px;
+}
+
+
+
+.header__callback-number::before {
+    content: '';
+    background-image: url(../images/icons/whatsapp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    left: -37px;
+    top: -5 px;
+    height: 28px;
+    width: 28px;
+
+}
+
+.header__button {
+    padding: 12px 24px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    background: var(--, linear-gradient(90deg, #B7903B 0%, #CFAA59 100%));
+
+}
+.header__button:hover,
+.header__button:focus {
+    opacity: 0.8;
+    transition: all ease-in 0.5s;
+}
+
+.header__nav {
+    background: var(--, linear-gradient(90deg, #B7903B 0%, #CFAA59 100%));
+}
