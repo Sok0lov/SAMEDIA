@@ -24,6 +24,12 @@
     display: flex;
 }
 
+.header__col_left {
+    @media (min-width: 769px) {
+        display: none;
+    }
+}
+
 .header__logo {
     @media (min-width: 769px) {
         min-width: 80px;
